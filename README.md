@@ -71,6 +71,8 @@ vglrun python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
 
 observe the video where the player is digging downwards but cannot due to Adventure mode.
 
+The script above simply apply a quick hack by changing the line `<AgentSection mode="Survival">` to `<AgentSection mode="Adventure">` in `MineDojo/minedojo/sim/mc_meta/minedojo_mission.xml.j2`, which can also be done manually.
+
 You can revert this change by:
 
 ```sh
