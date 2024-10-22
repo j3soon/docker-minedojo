@@ -55,6 +55,8 @@ vglrun python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
 
 observe the video where the player is digging downwards.
 
+https://github.com/user-attachments/assets/58249395-9df4-4b9c-835d-05f54b4c57e0
+
 ### Adventure Mode
 
 In the animal zoo example, destroying blocks might disrupt training. To prevent this, we can switch the game mode to Adventure, which disables player from destroying the terrain:
@@ -70,6 +72,8 @@ vglrun python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
 ```
 
 observe the video where the player is digging downwards but cannot due to Adventure mode.
+
+https://github.com/user-attachments/assets/d2225abb-f34f-419c-a459-8cda977f3cb2
 
 The script above simply apply a quick hack by changing the line `<AgentSection mode="Survival">` to `<AgentSection mode="Adventure">` in `MineDojo/minedojo/sim/mc_meta/minedojo_mission.xml.j2`, which can also be done manually.
 
