@@ -26,10 +26,10 @@ docker exec -it minedojo /bin/bash
 In the container, run the followings to test the installation:
 
 ```sh
-python /workspace/MineDojo/scripts/validate_install.py
-python /workspace/MineCLIP/main/mineagent/run_single.py
-python /workspace/MineCLIP/main/mineagent/run_env_in_loop.py
-python /workspace/MineCLIP/main/dense_reward/animal_zoo/run.py
+vglrun python /workspace/MineDojo/scripts/validate_install.py
+vglrun python /workspace/MineCLIP/main/mineagent/run_single.py
+vglrun python /workspace/MineCLIP/main/mineagent/run_env_in_loop.py
+vglrun python /workspace/MineCLIP/main/dense_reward/animal_zoo/run.py
 ```
 
 If you're going to use the host MineDojo and MineCLIP, run the following in the container:
@@ -50,7 +50,7 @@ The following commands should be ran in the container.
 ### Recording Video
 
 ```sh
-python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
+vglrun python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
 ```
 
 observe the video where the player is digging downwards.
@@ -66,7 +66,7 @@ In the animal zoo example, destroying blocks might disrupt training. To prevent 
 and test it with the script:
 
 ```sh
-python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
+vglrun python /workspace/MineCLIP/main/dense_reward/animal_zoo_dig_down/run.py
 ```
 
 observe the video where the player is digging downwards but cannot due to Adventure mode.
